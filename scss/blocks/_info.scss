@@ -1,0 +1,29 @@
+.info {
+	&__container {
+		display: flex;
+		gap: 15px;
+		justify-content: space-between;
+	}
+
+	.widget {
+		position: relative;
+
+		&__image {
+			border-radius: 24px;
+			width: 350px;
+			
+		}
+
+		&__bg {
+			position: absolute;
+			z-index: 0;
+		}
+
+		&__link {
+			
+		}
+
+		&__video {
+		}
+	}
+}

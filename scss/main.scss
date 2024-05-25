@@ -1,0 +1,35 @@
+// Base
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+// Header
+@import "./blocks/header";
+@import "./blocks/nav";
+
+// Section information
+@import "./blocks/info";
+
+// Section recomendation
+@import "./blocks/rec";
+
+// Section directions
+@import "./blocks/directions";
+@import "./blocks/direction";
+
+// Section blog
+@import "./blocks/blog";
+@import "./blocks/article";
+
+// Section gallery
+@import "./blocks/gallery";
+
+// Section mailing
+@import "./blocks/mailing";
+
+// Footer
+@import "./blocks/footer";
+
+// Media
+@import "./base/media";
+

@@ -1,0 +1,9 @@
+.directions {
+	&__container {
+		text-align: center;
+	}
+	&__row {
+		display: flex;
+		gap: 20px;
+	}
+}

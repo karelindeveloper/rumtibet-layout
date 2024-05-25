@@ -1,0 +1,78 @@
+.gallery {
+	&__container {
+		text-align: center;
+	}
+
+	&__content {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(4,1fr);
+		grid-template-areas: 
+			"photo1 photo1 photo2 photo3"
+			"photo4 photo5 photo5 photo6";
+		margin-bottom: clamp(2.25rem, -13.188rem + 32.5vw, 3.063rem);
+	}
+
+	&__btn {
+		display: block;
+		position: relative;
+		border-radius: 6px;
+
+		&-one {
+			grid-area: photo1;
+		}
+
+		&-two {
+			grid-area: photo2;
+		}
+
+		&-three {
+			grid-area: photo3;
+		}
+
+		&-four {
+			grid-area: photo4;
+		}
+
+		&-five {
+			grid-area: photo5;
+		}
+
+		&-six {
+			grid-area: photo6;
+		}
+
+		&::after {
+			content: ''; 
+			position: absolute; 
+			top: 0; 
+			left: 0; 
+			right: 0; 
+			bottom: 0; 
+			background: #1A3E3E4D;  
+			opacity: 0;
+			z-index: 0;
+			transition: all 0.1s ease-in;
+		}
+
+		&::before {
+			content: ''; 
+			position: absolute; 
+			top: 0; 
+			left: 0; 
+			right: 0; 
+			bottom: 0; 
+			background: url("../../img/gallery/zoom.svg") center no-repeat;
+			opacity: 0;
+			z-index: 1;
+			transition: all 0.1s ease-in;
+		}
+
+		&:hover {
+			&::before,&::after {
+				opacity: 1;
+			transition: all 0.1s ease-in;
+			}
+		}
+	}
+}

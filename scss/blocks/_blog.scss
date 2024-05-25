@@ -1,0 +1,14 @@
+.blog {
+	background-color: $background-secondary-color;
+
+	&__container {
+		text-align: center;
+	}
+
+	&__content {
+		margin-bottom: 50px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 24px;
+	}
+}

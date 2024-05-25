@@ -1,0 +1,125 @@
+.header {
+	color: $header-color;
+	height: 100vh;
+	background: $text-color url("../img/header/hero.png") center no-repeat;
+	background-size: cover;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-bottom: 8vh;
+		height: 100%;
+	}
+
+	&__top {
+		margin-top: 16px;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	&__logo {
+		min-width: 90px;
+	}
+
+	&__right {
+		font-size: 18px;
+		font-weight: 600;
+		display: flex;
+		gap: 49px;
+		align-items: center;
+	}
+
+	&__button {
+		padding: 12px 24px;
+	}
+
+	&__title {
+		margin-bottom: 41px;
+	}
+
+	&__form {
+		background-color: rgba($white-color, 0.2);
+		border-radius: 10px;
+		display: flex;
+		align-items: flex-start;
+		padding: 40px;
+		justify-content: space-between;
+		gap: 24px;
+		backdrop-filter: blur(5px);
+		z-index: 0;
+	}
+
+	&__form > label > span{
+		padding-left: 8px;
+		font-weight: 400;
+	}
+
+	&__input {
+		font-size: 16px;
+		border: 1px solid $header-color;
+		border-radius: 8px;
+		padding: 16px;
+		margin-bottom: 8px;
+		appearance: none;
+		font-weight: 700;
+		max-width: 100%;
+		padding-right: 40px;
+	}
+
+	&__option {
+		color: $secondary-color;
+		font-weight: 700;
+
+		&-disable {
+			display: none;
+		}
+	}
+
+	
+	#agen, #location {
+		position: relative;
+
+		&::before {
+			content: "";
+		
+			position: absolute;
+			right: 10px;
+			top: 18px;
+			width: 20px;
+			height: 20px;
+			pointer-events: none;
+			
+			background-image: url('../img/header/arrow-down.svg');
+			background-repeat: no-repeat;
+			
+		}
+	}
+
+
+	&__date {
+
+		&-first {
+			margin-right: 2px;
+		}
+	}
+	
+	&__search {
+		background-color: $header-color;
+		color: $secondary-color;
+
+		&:hover {
+			background-color: $secondary-color;
+			color: $header-color;
+			border: 1px solid $header-color;
+		}
+	}
+
+}
+
+#dateAfter,#dateBefore {
+	font-weight: 700;
+}
+
+

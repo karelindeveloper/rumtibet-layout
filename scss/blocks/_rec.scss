@@ -1,0 +1,56 @@
+.rec {
+	background-color: $background-secondary-color;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__content {
+	}
+
+	&__program {
+	margin-bottom: clamp(2rem, 1.818rem + 0.91vw, 2.5rem);
+	display: flex;
+	}
+
+	&__subject {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0.216px;
+	}
+
+	&__desc {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	}
+
+	&__image {
+		margin: 7px 16px 0 0;
+		max-width: none;
+	}
+
+	&__photos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	&__photo {
+		max-width: 250px;
+
+		&-one, &-two {
+			align-self: flex-end;
+		}
+
+		&-one, &-four {
+			border-radius: 0 50px;
+		}
+
+		&-two, &-three {
+			border-radius: 50px 0;
+		}
+	}
+}

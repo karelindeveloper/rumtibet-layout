@@ -7,20 +7,17 @@
 
 	.widget {
 		position: relative;
+		width: 300px;
 
 		&__image {
 			border-radius: 24px;
-			width: 350px;
-			
+			width: 100%;
 		}
 
 		&__bg {
-			position: absolute;
-			z-index: 0;
 		}
 
 		&__link {
-			
 		}
 
 		&__video {
